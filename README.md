@@ -1,2 +1,2 @@
 # Competitive Programming
-### This's all of my cp journey
+### This is all of my cp journey
