@@ -1,3 +1,7 @@
+/*
+Author: kornkin
+Description: Prefix sum + Math
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
