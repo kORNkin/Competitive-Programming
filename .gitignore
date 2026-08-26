@@ -1,6 +1,7 @@
 .vscode
 .DS_Store
 test
+test.o
 test.cpp
 test.py
 __pycache__
