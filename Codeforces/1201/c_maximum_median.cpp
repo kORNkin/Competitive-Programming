@@ -22,8 +22,8 @@ int main(){
 
     sort(arr, arr + n);
 
-    cout << solve(arr[((n+1)>>1) - 1], 2 * 10e5, arr, [](int m, int arr[]) -> bool{
-        int op_use = 0;
+    cout << solve(arr[((n+1)>>1) - 1], 2 * 1e9, arr, [](int m, int arr[]) -> bool{
+        long long op_use = 0;
 
         for(int i = ((n+1)>>1) - 1; i < n; i++){
             op_use += max(0, m - arr[i]);
