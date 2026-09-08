@@ -1,0 +1,11 @@
+g++ -O2 {file}.cpp -o test
+
+for in_file in *.in; do
+    base="${in_file%.in}"
+    ./test < "$in_file" > "$base.myout"
+    
+    # Check against expected output if it exists
+    if [ -f "$base.out" ]; then
+        diff -u -Z "$base.myout" "$base.out" && echo "PASS" || echo "FAIL"
+    fi
+done
